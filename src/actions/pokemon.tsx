@@ -12,7 +12,9 @@ export const fetchPokemon = (limit: number) => async (dispatch: (arg0: { type: s
 
     dispatch({type: FETCH_POKEMON, payload: data});
   } catch (error) {
-    console.log(error.message);
+    if (error instanceof Error) {
+      console.log(error.message);
+    }
   }
 }
 
@@ -24,6 +26,8 @@ export const fetchDetails = (id: string | undefined) => async (dispatch: (arg0: 
 
     dispatch({type: FETCH_DETAILS, payload: data});
   } catch (error) {
-    console.log(error.message);
+    if (error instanceof Error) {
+      console.log(error.message);
+    }
   }
 };

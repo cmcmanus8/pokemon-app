@@ -4,6 +4,7 @@ import Card from './Card'
 import {
   fetchPokemon,
 } from '../actions/pokemon';
+import { RootState } from '../reducers';
 
 const List = () => {
   const dispatch = useDispatch();
@@ -12,7 +13,7 @@ const List = () => {
     dispatch(fetchPokemon(151))
   }, [dispatch])
 
-  const pokemonList = useSelector((state) => state.pokemonState.pokemonList)
+  const pokemonList = useSelector((state: RootState) => state.pokemonState.pokemonList)
 
   console.log(pokemonList)
 

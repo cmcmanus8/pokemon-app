@@ -4,6 +4,7 @@ import {useParams, useNavigate} from "react-router-dom";
 import {
   fetchDetails,
 } from "../actions/pokemon";
+import { RootState } from "../reducers";
 
 const Details = () => {
   const dispatch = useDispatch();
@@ -14,7 +15,7 @@ const Details = () => {
     dispatch(fetchDetails(id));
   }, [dispatch, id]);
 
-  const currentDetails = useSelector((state) => state.pokemonState.currentDetails);
+  const currentDetails = useSelector((state: RootState) => state.pokemonState.currentDetails);
 
   const renderTypes = (types: any[]) => {
     return types.map((type, index) => (

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-const Card = ({ pokemonCard, id }) => {
+const Card = ({ pokemonCard, id }: { pokemonCard: any; id: any }) => {
   const { name } = pokemonCard
   const image = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`
   return (
