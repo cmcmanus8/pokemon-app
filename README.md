@@ -1,5 +1,10 @@
 # Small Frontend Pokemon App
 
+## Demo is available on: https://pokemon-app-calum.herokuapp.com/
+
+![Screenshot 2022-10-14 005631](https://user-images.githubusercontent.com/18538027/195725526-c06343fc-9bb7-4163-8fd7-ab9d31850e60.png)
+![Screenshot 2022-10-14 005647](https://user-images.githubusercontent.com/18538027/195725536-59c24198-1d85-4c60-9105-95e114ca6ccd.png)
+
 Simple app built for code test. The app was built in React and styled with Tailwind for quickness.
 Requirements are as below:
 
@@ -14,8 +19,6 @@ When clicking on one Pokémon we'd like to see some more information of this Pok
 ## To run app
 * Install packages with `npm install`
 * Start app with `npm run dev`
-
-## Demo is available on: https://pokemon-app-calum.herokuapp.com/
 
 ## Further work
 It was advised to only spend a few hours on this, so here are a few improvements I would make with more time:
