@@ -15,4 +15,4 @@ When clicking on one Pokémon we'd like to see some more information of this Pok
 * Install packages with `npm install`
 * Start app with `npm run dev`
 
-## Demo is available on: 
+## Demo is available on: https://pokemon-app-calum.herokuapp.com/
