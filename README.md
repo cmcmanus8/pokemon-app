@@ -16,3 +16,9 @@ When clicking on one Pokémon we'd like to see some more information of this Pok
 * Start app with `npm run dev`
 
 ## Demo is available on: https://pokemon-app-calum.herokuapp.com/
+
+## Further work
+It was advised to only spend a few hours on this, so here are a few improvements I would make with more time:
+* Testing, unit and integration tests using Jest
+* Pagination to handle all pokemon data
+* Styling and cleaner loading when navigating to Details pages
