@@ -15,7 +15,6 @@ const Card = ({ pokemonCard, id }) => {
           />
         </div>
         <div className='font-medium text-sm text-center text-sky-700 group-hover:text-black rounded-full py-1 mt-2 w-4/5 mx-auto'>
-          {' '}
           {name.charAt(0).toUpperCase() + name.slice(1)}
         </div>
       </div>

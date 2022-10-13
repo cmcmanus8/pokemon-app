@@ -16,13 +16,13 @@ const Details = () => {
 
   const currentDetails = useSelector((state) => state.pokemonState.currentDetails);
 
-  const renderTypes = (types) => {
+  const renderTypes = (types: any[]) => {
     return types.map((type, index) => (
       <div key={index} className="ml-2 bg-slate-200 px-2 rounded-lg">{type.type.name.toUpperCase()}</div>
     ))
   }
 
-  const renderStats = (stats) => {
+  const renderStats = (stats: any[]) => {
     return stats.map((stat, index) => (
       <div key={index} className="flex text-lg my-2 items-center justify-between border-b-2 font-bold rounded-xl py-2 px-8">
         <div className="text-yellow-300">{stat.stat.name.toUpperCase()}</div>
@@ -31,22 +31,12 @@ const Details = () => {
     ))
   }
 
-  const loadDetails = (currentDetails) => {
+  const loadDetails = (currentDetails: { id: any; name: any; height: any; weight: any; stats: any; types: any; }) => {
     const {
       id,
       name,
-      base_experience,
       height,
       weight,
-      abilities,
-      forms,
-      game_indices,
-      held_items,
-      location_area_encounters,
-      moves,
-      past_types,
-      sprites,
-      species,
       stats,
       types,
     } = currentDetails;
@@ -61,7 +51,7 @@ const Details = () => {
             <div className="bg-slate-300/75 px-4 py-2 rounded-xl text-black font-bold ml-2 text-2xl ">{name.charAt(0).toUpperCase() + name.slice(1)}</div>
             <div className="flex items-center font-semibold text-base">{renderTypes(types)}</div>
           </div>
-          <div className="h-72 mx-auto my-4 bg-white rounded-xl">
+          <div className="h-72 mx-auto my-4 bg-white rounded-xl flex flex-col justify-evenly">
             <img className="max-h-64 py-4 mx-auto" src={image} alt={name} />
             <div className="font-semibold">Height: {height}dm - Weight: {weight}hg</div>
           </div>

@@ -6,7 +6,7 @@ import {
 import * as api from '../features/pokemon/services/pokemonApi'
 
 // Action creators
-export const fetchPokemon = (limit) => async (dispatch) => {
+export const fetchPokemon = (limit: number) => async (dispatch: (arg0: { type: string; payload: any; }) => void) => {
   try {
     const { data } = await api.fetchPokemon(limit);
 
@@ -16,7 +16,7 @@ export const fetchPokemon = (limit) => async (dispatch) => {
   }
 }
 
-export const fetchDetails = (id) => async (dispatch) => {
+export const fetchDetails = (id: string | undefined) => async (dispatch: (arg0: { type: string; payload: any; }) => void) => {
   try {
     const { data } = await api.fetchDetails(id);
 
