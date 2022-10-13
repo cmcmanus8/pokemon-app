@@ -11,12 +11,14 @@ export type AppProps = {};
 export const App: FunctionComponent<AppProps> = () => {
   return (
     <BrowserRouter>
-      <div className="flex max-w-3xl">
-        <Routes>
-          <Route index element={<List />} />
-          <Route path={"/details/:id"} element={<Details />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
-        </Routes>
+      <div className='flex justify-center'>
+        <div className="flex max-w-5xl w-full mx-8 font-sans">
+          <Routes>
+            <Route index element={<List />} />
+            <Route path={"/details/:id"} element={<Details />} />
+            {/* <Route path="*" element={<NotFound />} /> */}
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );
