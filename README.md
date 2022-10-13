@@ -22,3 +22,4 @@ It was advised to only spend a few hours on this, so here are a few improvements
 * Testing, unit and integration tests using Jest
 * Pagination to handle all pokemon data
 * Styling and cleaner loading when navigating to Details pages
+* Adapt app to be more mobile-friendly, currently it is best viewed on medium screens and above
